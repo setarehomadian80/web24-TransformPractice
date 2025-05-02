@@ -1,6 +1,6 @@
 # 🌐 Simple Static Website
 
-This is my **transforn and text-shadow practice** — a clean and simple static website built using **HTML** and **CSS**.  
+This is my **transform and text-shadow practice** — a clean and simple static website built using **HTML** and **CSS**.  
 
 ---
 
