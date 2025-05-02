@@ -7,7 +7,7 @@ This is my **transforn and text-shadow practice** — a clean and simple static 
 ## 📸 Preview
 
 <div align="center">
-  <img src="assets/image/img/Screenshot 2025-05-03 001432" alt="Project Screenshot" width="700"/>
+  <img src="11session-practice/assets/img/Screenshot 2025-05-03 001432.png" alt="Project Screenshot" width="700"/>
 </div>
 
 ---
