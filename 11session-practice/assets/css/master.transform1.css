@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to right, #f56117, #0B486B);
+
+
+    >.box {
+        width: 20%;
+        margin: 200px auto;
+        /* background-color: brown; */
+        transform-origin: left;
+        transform: perspective(800px) rotateY(-30deg);
+        transition-timing-function: ease;
+        transition-duration: 2s;
+
+        &:hover {
+            transform: perspective(800px) rotateY(0deg);
+
+            >.top {
+                transform: perspective(800px) rotate(0deg);
+            }
+        }
+
+        >.top {
+            width: 100%;
+            height: 30px;
+            border: 2px solid black;
+            transform-origin: 0 100%;
+            transform: perspective(800px) rotate(-10deg);
+            transition-duration: 2s;
+            background-image: url(../img/clap2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 4px -4px 5px rgba(86, 85, 85, 0.704), 5px -5px 5px rgba(81, 80, 80, 0.556), 6px -6px 5px rgba(105, 103, 103, 0.573);
+        }
+
+        >.bottom {
+            width: 100%;
+            height: 220px;
+            border: 2px solid black;
+            background-image: url(../img/clap.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 4px 4px 5px rgba(86, 85, 85, 0.84), 5px 5px 5px rgba(81, 80, 80, 0.756), 6px 6px 5px rgba(105, 103, 103, 0.795);
+
+        }
+
+    }
+}

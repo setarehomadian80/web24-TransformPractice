@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+
+    >.translate {
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        position: relative;
+        color: #822EFF;
+
+        >.parent {
+            width: 500px;
+            height: 250px;
+            border-top-right-radius: 250px;
+            border-top-left-radius: 250px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* border: 2px solid black; */
+            transform-origin: 50% 0;
+
+            &:hover {
+                background-color: white;
+
+                >span {
+                    margin: 0 30px;
+                    color: #302b63;
+                }
+
+                >.span1 {
+                    &::after {
+                        opacity: 1;
+                    }
+
+                    transform: perspective(800px) rotateY(-50deg) scale(1.8, 1.8);
+                }
+
+                >.span2 {
+                    &::after {
+                        opacity: 1;
+                    }
+
+                    transform: scale(1.8, 1.6);
+                }
+
+                >.span3 {
+                    &::after {
+                        opacity: 1;
+                    }
+
+                    transform: perspective(800px) rotateY(50deg) scale(1.8, 1.8);
+                }
+            }
+
+            >span {
+                display: flex;
+                /* background-color: brown; */
+                /* border: 2px solid black; */
+                font-weight: 900;
+                font-size: 200px;
+                margin: 0 5px;
+                transition-property: transform, margin;
+                transition-duration: 1s;
+                position: relative;
+
+
+            }
+
+            >.span1 {
+
+                &::after {
+                    content: "c";
+                    position: absolute;
+                    top: 240px;
+                    left: 0;
+                    color: rgba(222, 184, 135, 0.159);
+                    transform: perspective(800px) rotateX(180deg) scaleY(2.5);
+                    opacity: 0;
+
+
+                }
+            }
+
+            >.span2 {
+                &::after {
+                    content: "s";
+                    position: absolute;
+                    top: 240px;
+                    left: 0;
+                    color: rgba(222, 184, 135, 0.159);
+                    transform: perspective(800px) rotateX(180deg) scaleY(2.5);
+                    opacity: 0;
+                }
+            }
+
+            >.span3 {
+                &::after {
+                    content: "s";
+                    position: absolute;
+                    top: 240px;
+                    left: 0;
+                    color: rgba(222, 184, 135, 0.159);
+                    transform: perspective(800px) rotateX(180deg) scaleY(2.5);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+
+    >.box {
+        width: 100%;
+        height: 180vh;
+        /* background-color: aqua; */
+        border: 2px solid black;
+
+
+        >.rotate {
+            width: 100%;
+            height: 100vh;
+        }
+
+        >.door-rotate {
+            width: 60%;
+            height: 90%;
+            margin: 0 auto;
+            background-color: brown;
+            display: flex;
+            margin: 40px auto;
+            background-image: url(../img/download.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+
+            * {
+                width: 50%;
+                height: 100%;
+
+            }
+
+            >.left {
+                background: linear-gradient(to right, #99f2c8b3, #1f4037a4);
+                transform-origin: left;
+                transition-property: transform;
+                transition-duration: 3s;
+                transition-timing-function: ease;
+
+                &:hover {
+                    transform: perspective(800px) rotateY(80deg);
+                }
+            }
+
+            >.right {
+                background: linear-gradient(to right, #99f2c8ae, #1f4037a8);
+                transform-origin: right;
+                transition-property: transform;
+                transition-duration: 3s;
+                transition-timing-function: ease;
+
+                &:hover {
+                    transform: perspective(800px) rotateY(-80deg);
+                }
+            }
+
+        }
+    }
+}
